@@ -52,12 +52,21 @@ Runs automatically every morning at 7am ET via GitHub Actions.
 
 1. Go to **APIs & Services > Credentials**
 2. Click **+ Create Credentials** at the top, then select **OAuth client ID**
-3. For **Application type**, select **Desktop app**
-4. Name it `Morning Brief` and click **Create**
-5. A dialog will show your **Client ID** and **Client Secret** — copy both and save them somewhere safe
-6. Click **OK**
+3. For **Application type**, select **Web application** (not Desktop app)
+4. Name it `Morning Brief`
+5. Under **Authorized redirect URIs**, click **+ Add URI** and enter:
+   ```
+   http://localhost:3000/callback
+   ```
+6. Click **Create**
+7. A dialog will show your **Client ID** and **Client Secret** — copy both and save them somewhere safe (or download the JSON)
+8. Click **OK**
 
 ### 5. Get Your Refresh Token
+
+You can provide credentials either via `.env` or by passing the downloaded JSON file directly.
+
+**Option A — Using the downloaded client JSON (easiest):**
 
 1. Clone this repo and install dependencies:
    ```bash
@@ -65,19 +74,31 @@ Runs automatically every morning at 7am ET via GitHub Actions.
    cd morning-brief
    npm install
    ```
+2. Run the token script, passing the JSON file Google gave you when you created the OAuth client:
+   ```bash
+   node scripts/get-token.js path/to/client_secret_XXXX.json
+   ```
+
+**Option B — Using `.env`:**
+
+1. Clone and install (same as above)
 2. Copy `.env.example` to `.env`:
    ```bash
    cp .env.example .env
    ```
 3. Edit `.env` and fill in your `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` from Step 4
-4. Run the token helper script:
+4. Run:
    ```bash
-   node src/get-refresh-token.js
+   npm run get-token
    ```
-5. Open the URL it prints in your browser
-6. Sign in with your Google account and grant access to Gmail and Calendar
-7. Copy the authorization code from Google and paste it into the terminal
-8. The script will print your **refresh token** — copy it and add it to your `.env` file as `GOOGLE_REFRESH_TOKEN`
+
+**Either way, the script will:**
+
+1. Start a temporary local server on port 3000
+2. Open your browser to Google's consent screen
+3. After you sign in and approve, Google redirects back to `localhost:3000/callback`
+4. The script exchanges the code for tokens and prints your **refresh token** in the terminal
+5. Copy the refresh token and save it — you'll need it for `.env` and GitHub Actions secrets
 
 > **Important:** This refresh token does not expire as long as the app stays in "Testing" mode and you don't revoke access. Keep it secret.
 
@@ -127,7 +148,7 @@ Runs automatically every morning at 7am ET via GitHub Actions.
    cp .env.example .env
    ```
 
-3. If you haven't already, run `node src/get-refresh-token.js` to get your refresh token (see Step 5 above).
+3. If you haven't already, run `npm run get-token` to get your refresh token (see Step 5 above).
 
 4. Run the script:
    ```bash
@@ -142,9 +163,10 @@ Runs automatically every morning at 7am ET via GitHub Actions.
 morning-brief/
 ├── .github/workflows/
 │   └── morning-brief.yml   ← GitHub Actions workflow (daily cron + manual)
+├── scripts/
+│   └── get-token.js         ← One-time setup: obtain OAuth2 refresh token
 ├── src/
-│   ├── brief.js             ← Main script: fetches data, calls Anthropic, writes JSON
-│   └── get-refresh-token.js ← One-time helper to obtain OAuth2 refresh token
+│   └── brief.js             ← Main script: fetches data, calls Anthropic, writes JSON
 ├── docs/
 │   └── index.html           ← GitHub Pages frontend (vanilla HTML/CSS/JS)
 ├── brief.json               ← Output: the generated brief (committed by Actions)
@@ -156,7 +178,7 @@ morning-brief/
 ## Troubleshooting
 
 - **"GOOGLE_REFRESH_TOKEN environment variable is required"**: Make sure you've added all three Google secrets (`GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`) in GitHub Actions settings.
-- **401 or "invalid_grant" errors**: Your refresh token may have been revoked. Re-run `node src/get-refresh-token.js` to get a new one and update the secret.
+- **401 or "invalid_grant" errors**: Your refresh token may have been revoked. Re-run `npm run get-token` to get a new one and update the secret.
 - **403 errors from Google APIs**: The OAuth consent screen scopes may not include Gmail or Calendar. Go back to the consent screen setup and make sure both `gmail.readonly` and `calendar.readonly` scopes are added.
 - **"Access blocked: This app's request is invalid"**: You may not have added your email as a test user in the OAuth consent screen. Go to **APIs & Services > OAuth consent screen > Test users** and add your Gmail address.
 - **Empty brief.json**: Check the GitHub Actions logs for errors. The Anthropic API key might be invalid, or the Google credentials might not be set up correctly.
