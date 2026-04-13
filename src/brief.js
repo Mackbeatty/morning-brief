@@ -149,6 +149,20 @@ Return a JSON object (and ONLY the JSON object, no markdown fences) with this ex
   return JSON.parse(cleaned);
 }
 
+function buildFallbackBrief(events, emails) {
+  return {
+    summary: 'AI summary unavailable — showing raw data.',
+    events,
+    emails: emails.map((e) => ({ ...e, priority: 'medium' })),
+    metrics: {
+      events_today: events.length,
+      unread_emails: emails.length,
+      high_priority_emails: 0,
+    },
+    generated_at: new Date().toISOString(),
+  };
+}
+
 async function main() {
   console.log('Starting Morning Brief generation...');
 
@@ -162,11 +176,17 @@ async function main() {
   const emails = await fetchEmails(auth);
   console.log(`Found ${emails.length} unread emails.`);
 
-  console.log('Generating brief with Anthropic...');
-  const brief = await generateBrief(events, emails);
+  let brief;
 
-  // Ensure generated_at is set
-  brief.generated_at = brief.generated_at || new Date().toISOString();
+  try {
+    console.log('Generating brief with Anthropic...');
+    brief = await generateBrief(events, emails);
+    brief.generated_at = brief.generated_at || new Date().toISOString();
+  } catch (err) {
+    console.warn(`⚠ Anthropic API failed: ${err.message}`);
+    console.warn('Running in fallback mode — generating brief from raw data.');
+    brief = buildFallbackBrief(events, emails);
+  }
 
   const outputPath = join(ROOT, 'brief.json');
   writeFileSync(outputPath, JSON.stringify(brief, null, 2));
