@@ -4,10 +4,12 @@
   "description": "AI-powered morning brief via Gmail, Google Calendar, and Anthropic API",
   "type": "module",
   "scripts": {
-    "start": "node src/brief.js"
+    "start": "node src/brief.js",
+    "get-token": "node src/get-refresh-token.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.0",
     "googleapis": "^148.0.0"
   }
 }

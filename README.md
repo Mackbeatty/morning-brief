@@ -7,7 +7,7 @@ Runs automatically every morning at 7am ET via GitHub Actions.
 ## How It Works
 
 1. GitHub Actions triggers the script on schedule (7am ET daily)
-2. The script authenticates with Google APIs using a service account
+2. The script authenticates with Google APIs using OAuth2 (refresh token)
 3. It fetches today's calendar events and recent unread emails
 4. All data is sent to Claude (Anthropic API) to generate a structured brief
 5. The result is written to `brief.json` and committed back to the repo
@@ -28,53 +28,58 @@ Runs automatically every morning at 7am ET via GitHub Actions.
 2. Search for **Gmail API**, click on it, then click **Enable**
 3. Go back to the API Library, search for **Google Calendar API**, click on it, then click **Enable**
 
-### 3. Create a Service Account
+### 3. Configure the OAuth Consent Screen
 
-1. Go to **APIs & Services > Credentials** in the left sidebar
-2. Click **+ Create Credentials** at the top, then select **Service account**
-3. Give it a name like `morning-brief-sa` and click **Create and Continue**
-4. Skip the optional "Grant this service account access" step (click **Continue**)
-5. Skip the optional "Grant users access" step (click **Done**)
-6. You'll be taken back to the Credentials page. Click on the service account you just created
-7. Go to the **Keys** tab
-8. Click **Add Key > Create new key**
-9. Select **JSON** and click **Create**
-10. A JSON file will download to your computer. Keep this safe — you'll need its contents for GitHub Actions secrets
+1. In the Google Cloud Console, go to **APIs & Services > OAuth consent screen**
+2. Select **External** as the user type, then click **Create**
+3. Fill in the required fields:
+   - **App name**: `Morning Brief`
+   - **User support email**: your email address
+   - **Developer contact email**: your email address
+4. Click **Save and Continue**
+5. On the **Scopes** page, click **Add or Remove Scopes**
+6. Find and check these two scopes:
+   - `https://www.googleapis.com/auth/gmail.readonly`
+   - `https://www.googleapis.com/auth/calendar.readonly`
+7. Click **Update**, then **Save and Continue**
+8. On the **Test users** page, click **+ Add Users**
+9. Enter your Gmail address and click **Add**, then **Save and Continue**
+10. Click **Back to Dashboard**
 
-### 4. Set Up Domain-Wide Delegation (Google Workspace)
+> **Note:** The app will stay in "Testing" mode, which is fine — only your account needs access. Test users can use the app indefinitely without needing to publish it.
 
-If you're using a Google Workspace account (company/organization email), you need domain-wide delegation so the service account can read your Gmail and Calendar:
+### 4. Create OAuth2 Credentials
 
-1. On the service account details page, go to the **Details** tab
-2. Under **Advanced settings**, find and expand **Domain-wide delegation**
-3. Click **Enable domain-wide delegation** (you may need to configure the OAuth consent screen first — choose "Internal" if prompted)
-4. Copy the **Client ID** (a long number) from the service account details page
-5. Go to [Google Workspace Admin Console](https://admin.google.com/) (you need admin access)
-6. Navigate to **Security > Access and data control > API controls**
-7. Click **Manage Domain-wide Delegation**
-8. Click **Add new**
-9. Paste the **Client ID** you copied
-10. In the **OAuth Scopes** field, enter these two scopes (comma-separated):
-    ```
-    https://www.googleapis.com/auth/gmail.readonly,https://www.googleapis.com/auth/calendar.readonly
-    ```
-11. Click **Authorize**
+1. Go to **APIs & Services > Credentials**
+2. Click **+ Create Credentials** at the top, then select **OAuth client ID**
+3. For **Application type**, select **Desktop app**
+4. Name it `Morning Brief` and click **Create**
+5. A dialog will show your **Client ID** and **Client Secret** — copy both and save them somewhere safe
+6. Click **OK**
 
-**If you're using a personal Gmail account (not Workspace):** Domain-wide delegation won't work. Instead, you'll need to use OAuth2 credentials. Consider using a Google Workspace account, or modify the script to use OAuth2 with a refresh token.
+### 5. Get Your Refresh Token
 
-### 5. Share Your Calendar with the Service Account (Alternative to Domain-Wide Delegation)
+1. Clone this repo and install dependencies:
+   ```bash
+   git clone https://github.com/<your-username>/morning-brief.git
+   cd morning-brief
+   npm install
+   ```
+2. Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+3. Edit `.env` and fill in your `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` from Step 4
+4. Run the token helper script:
+   ```bash
+   node src/get-refresh-token.js
+   ```
+5. Open the URL it prints in your browser
+6. Sign in with your Google account and grant access to Gmail and Calendar
+7. Copy the authorization code from Google and paste it into the terminal
+8. The script will print your **refresh token** — copy it and add it to your `.env` file as `GOOGLE_REFRESH_TOKEN`
 
-If you don't have Google Workspace admin access, you can share your calendar directly:
-
-1. Open [Google Calendar](https://calendar.google.com/)
-2. Find your calendar in the left sidebar, click the three dots next to it, then **Settings and sharing**
-3. Scroll to **Share with specific people or groups**
-4. Click **+ Add people and groups**
-5. Paste the service account email (found on the service account details page, looks like `morning-brief-sa@your-project.iam.gserviceaccount.com`)
-6. Set permission to **See all event details**
-7. Click **Send**
-
-Note: This only covers Calendar. For Gmail, you need domain-wide delegation.
+> **Important:** This refresh token does not expire as long as the app stays in "Testing" mode and you don't revoke access. Keep it secret.
 
 ### 6. Add GitHub Actions Secrets
 
@@ -86,8 +91,9 @@ Note: This only covers Calendar. For Gmail, you need domain-wide delegation.
 | Secret Name | Value |
 |---|---|
 | `ANTHROPIC_API_KEY` | Your Anthropic API key (get one at [console.anthropic.com](https://console.anthropic.com/)) |
-| `GOOGLE_SERVICE_ACCOUNT_JSON` | The entire contents of the JSON key file you downloaded in Step 3 |
-| `GMAIL_USER_EMAIL` | The email address whose Gmail and Calendar the service account should access (your email) |
+| `GOOGLE_CLIENT_ID` | The OAuth2 Client ID from Step 4 |
+| `GOOGLE_CLIENT_SECRET` | The OAuth2 Client Secret from Step 4 |
+| `GOOGLE_REFRESH_TOKEN` | The refresh token you obtained in Step 5 |
 
 ### 7. Enable GitHub Pages
 
@@ -121,7 +127,7 @@ Note: This only covers Calendar. For Gmail, you need domain-wide delegation.
    cp .env.example .env
    ```
 
-3. For `GOOGLE_SERVICE_ACCOUNT_JSON`, paste the entire contents of your service account JSON key file as a single line.
+3. If you haven't already, run `node src/get-refresh-token.js` to get your refresh token (see Step 5 above).
 
 4. Run the script:
    ```bash
@@ -137,7 +143,8 @@ morning-brief/
 ├── .github/workflows/
 │   └── morning-brief.yml   ← GitHub Actions workflow (daily cron + manual)
 ├── src/
-│   └── brief.js             ← Main script: fetches data, calls Anthropic, writes JSON
+│   ├── brief.js             ← Main script: fetches data, calls Anthropic, writes JSON
+│   └── get-refresh-token.js ← One-time helper to obtain OAuth2 refresh token
 ├── docs/
 │   └── index.html           ← GitHub Pages frontend (vanilla HTML/CSS/JS)
 ├── brief.json               ← Output: the generated brief (committed by Actions)
@@ -148,8 +155,9 @@ morning-brief/
 
 ## Troubleshooting
 
-- **"GMAIL_USER_EMAIL environment variable is required"**: Make sure you've added the `GMAIL_USER_EMAIL` secret in GitHub Actions settings.
-- **403 errors from Google APIs**: The service account doesn't have permission. Check that domain-wide delegation is set up correctly, or that you've shared your calendar with the service account email.
-- **"Delegation denied" errors**: The OAuth scopes in the admin console don't match what the script requests. Make sure both `gmail.readonly` and `calendar.readonly` scopes are authorized.
+- **"GOOGLE_REFRESH_TOKEN environment variable is required"**: Make sure you've added all three Google secrets (`GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`) in GitHub Actions settings.
+- **401 or "invalid_grant" errors**: Your refresh token may have been revoked. Re-run `node src/get-refresh-token.js` to get a new one and update the secret.
+- **403 errors from Google APIs**: The OAuth consent screen scopes may not include Gmail or Calendar. Go back to the consent screen setup and make sure both `gmail.readonly` and `calendar.readonly` scopes are added.
+- **"Access blocked: This app's request is invalid"**: You may not have added your email as a test user in the OAuth consent screen. Go to **APIs & Services > OAuth consent screen > Test users** and add your Gmail address.
 - **Empty brief.json**: Check the GitHub Actions logs for errors. The Anthropic API key might be invalid, or the Google credentials might not be set up correctly.
 - **GitHub Pages shows "No brief available yet"**: The workflow hasn't run yet, or `brief.json` hasn't been pushed. Trigger a manual run from the Actions tab.

@@ -9,25 +9,22 @@ const __dirname = dirname(__filename);
 const ROOT = join(__dirname, '..');
 
 const TIMEZONE = 'America/Toronto';
-const SCOPES = [
-  'https://www.googleapis.com/auth/gmail.readonly',
-  'https://www.googleapis.com/auth/calendar.readonly',
-];
 
 function getGoogleAuth() {
-  const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
-  const userEmail = process.env.GMAIL_USER_EMAIL;
+  const oauth2Client = new google.auth.OAuth2(
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+  );
 
-  if (!userEmail) {
-    throw new Error('GMAIL_USER_EMAIL environment variable is required');
+  if (!process.env.GOOGLE_REFRESH_TOKEN) {
+    throw new Error('GOOGLE_REFRESH_TOKEN environment variable is required');
   }
 
-  return new google.auth.JWT({
-    email: credentials.client_email,
-    key: credentials.private_key,
-    scopes: SCOPES,
-    subject: userEmail,
+  oauth2Client.setCredentials({
+    refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
   });
+
+  return oauth2Client;
 }
 
 async function fetchCalendarEvents(auth) {
