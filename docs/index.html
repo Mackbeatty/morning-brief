@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning Brief</title>
+  <style>
+    :root {
+      --bg: #f7f5ee;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-secondary: #6b6b6b;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --border: #e5e2d9;
+      --high: #dc2626;
+      --medium: #d97706;
+      --low: #6b7280;
+      --radius: 12px;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .header {
+      margin-bottom: 32px;
+    }
+
+    .greeting {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .date {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-top: 4px;
+    }
+
+    .summary {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      font-size: 15px;
+      line-height: 1.7;
+      box-shadow: var(--shadow);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .metric-value {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .metric-value.accent {
+      color: var(--accent);
+    }
+
+    .metric-value.high {
+      color: var(--high);
+    }
+
+    .metric-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .event-card, .email-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 8px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .event-time {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      min-width: 72px;
+      padding-top: 2px;
+    }
+
+    .event-details {
+      flex: 1;
+    }
+
+    .event-title {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .event-location {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .email-priority {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .email-priority.high { background: var(--high); }
+    .email-priority.medium { background: var(--medium); }
+    .email-priority.low { background: var(--low); }
+
+    .email-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .email-from {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .email-subject {
+      font-size: 14px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .email-preview {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 13px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--text-secondary);
+      padding: 40px 20px;
+      font-size: 15px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-secondary);
+    }
+
+    .loading-spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 32px 16px; }
+      .greeting { font-size: 24px; }
+      .metrics { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .metric-card { padding: 12px; }
+      .metric-value { font-size: 24px; }
+      .event-card, .email-card { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      <p>Loading your brief...</p>
+    </div>
+  </div>
+
+  <script>
+    const BRIEF_URL = '../brief.json';
+    const REFRESH_INTERVAL = 60_000;
+
+    function formatDate(date) {
+      return date.toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      });
+    }
+
+    function formatTimestamp(iso) {
+      const d = new Date(iso);
+      return d.toLocaleString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+      });
+    }
+
+    function getGreeting() {
+      const hour = new Date().getHours();
+      if (hour < 12) return 'Good morning, Mack';
+      if (hour < 17) return 'Good afternoon, Mack';
+      return 'Good evening, Mack';
+    }
+
+    function renderBrief(data) {
+      const app = document.getElementById('app');
+
+      const eventsHTML = data.events.length === 0
+        ? '<div class="empty-state">No events today. Clear schedule.</div>'
+        : data.events.map(e => `
+            <div class="event-card">
+              <div class="event-time">${e.time}</div>
+              <div class="event-details">
+                <div class="event-title">${e.title}</div>
+                ${e.location ? `<div class="event-location">${e.location}</div>` : ''}
+              </div>
+            </div>
+          `).join('');
+
+      const emailsHTML = data.emails.length === 0
+        ? '<div class="empty-state">Inbox zero. Nice.</div>'
+        : data.emails.map(e => `
+            <div class="email-card">
+              <div class="email-priority ${e.priority}"></div>
+              <div class="email-content">
+                <div class="email-from">${e.from}</div>
+                <div class="email-subject">${e.subject}</div>
+                ${e.preview ? `<div class="email-preview">${e.preview}</div>` : ''}
+              </div>
+            </div>
+          `).join('');
+
+      app.innerHTML = `
+        <div class="header">
+          <div class="greeting">${getGreeting()}</div>
+          <div class="date">${formatDate(new Date())}</div>
+        </div>
+
+        <div class="summary">${data.summary}</div>
+
+        <div class="metrics">
+          <div class="metric-card">
+            <div class="metric-value accent">${data.metrics.events_today}</div>
+            <div class="metric-label">Events</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">${data.metrics.unread_emails}</div>
+            <div class="metric-label">Unread</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value high">${data.metrics.high_priority_emails}</div>
+            <div class="metric-label">High Priority</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Schedule</div>
+          ${eventsHTML}
+        </div>
+
+        <div class="section">
+          <div class="section-title">Emails</div>
+          ${emailsHTML}
+        </div>
+
+        <div class="footer">
+          Last updated: ${formatTimestamp(data.generated_at)}
+        </div>
+      `;
+    }
+
+    function renderError(message) {
+      document.getElementById('app').innerHTML = `
+        <div class="empty-state">
+          <p>${message}</p>
+          <p style="margin-top: 8px; font-size: 13px;">The brief will appear here after the first GitHub Actions run.</p>
+        </div>
+      `;
+    }
+
+    async function loadBrief() {
+      try {
+        const res = await fetch(BRIEF_URL, { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data.summary) throw new Error('Empty brief');
+        renderBrief(data);
+      } catch (err) {
+        renderError('No brief available yet.');
+      }
+    }
+
+    loadBrief();
+    setInterval(loadBrief, REFRESH_INTERVAL);
+  </script>
+</body>
+</html>
