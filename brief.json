@@ -1,11 +1,72 @@
 {
-  "summary": "",
+  "summary": "AI summary unavailable — showing raw data.",
   "events": [],
-  "emails": [],
+  "emails": [
+    {
+      "from": "Mackenzie Beatty",
+      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (f13e86a)",
+      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
+      "priority": "medium"
+    },
+    {
+      "from": "Mackenzie Beatty",
+      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (f13e86a)",
+      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
+      "priority": "medium"
+    },
+    {
+      "from": "Mackenzie Beatty",
+      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (e22187d)",
+      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
+      "priority": "medium"
+    },
+    {
+      "from": "\"BestBuy.ca\"",
+      "subject": "Unbelievable 25th Anniversary savings on now!",
+      "preview": "A celebration that&#39;s a really big deal ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ",
+      "priority": "medium"
+    },
+    {
+      "from": "Team Pierre",
+      "subject": "My message to you",
+      "preview": "History will not judge us by the disruptions we faced, but by how we responded. By whether we surrendered to events or m",
+      "priority": "medium"
+    },
+    {
+      "from": "Power Kitchen",
+      "subject": "Low carb works. Here’s why.",
+      "preview": "More protein, simpler meals, and a routine that&#39;s easier to follow. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "no-reply@myconnectedbuilding.com",
+      "subject": "Parcel Delivery Notification",
+      "preview": "New Parcel Delivery Information Unit 2001 Notification Type Deposit Compartment 806 Timestamp 2026-04-13 14:48 Passcode ",
+      "priority": "medium"
+    },
+    {
+      "from": "GitHub",
+      "subject": "[GitHub] A personal access token (classic) has been added to your account",
+      "preview": "Hey Mackbeatty! A personal access token (classic) &quot;morning brief login&quot; with repo and workflow scopes was rece",
+      "priority": "medium"
+    },
+    {
+      "from": "no-reply@myconnectedbuilding.com",
+      "subject": "Parcel Delivery Notification",
+      "preview": "New Parcel Delivery Information Unit 2001 Notification Type Deposit Compartment 107 Timestamp 2026-04-13 09:13 Passcode ",
+      "priority": "medium"
+    },
+    {
+      "from": "Reddit",
+      "subject": "\"offer revoke\"",
+      "preview": "r/OntarioGrade12s: offer revoke has anyone actually gotten their offer revoked due to large grade drop? because say you ",
+      "priority": "medium"
+    }
+  ],
   "metrics": {
     "events_today": 0,
-    "unread_emails": 0,
+    "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": ""
+  "generated_at": "2026-04-13T18:17:58.853Z"
 }
