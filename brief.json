@@ -3,63 +3,63 @@
   "events": [],
   "emails": [
     {
-      "from": "Mackenzie Beatty",
-      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief, Attempt #2 - main (f13e86a)",
-      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run, Attempt #2 Morning Brief, Attempt #2: All jobs have failed View w",
+      "from": "\"Rúngne\"",
+      "subject": "New Drop: Project Hoodie + Crewneck",
+      "preview": "Hoodies &amp; crews for Scandinavian summer. See the drop → ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
       "priority": "medium"
     },
     {
-      "from": "Mackenzie Beatty",
-      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (f13e86a)",
-      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
+      "from": "Supabase",
+      "subject": "Welcome to Supabase",
+      "preview": "Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need ",
       "priority": "medium"
     },
     {
-      "from": "Mackenzie Beatty",
-      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (f13e86a)",
-      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
-      "priority": "medium"
-    },
-    {
-      "from": "Mackenzie Beatty",
-      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (f13e86a)",
-      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
-      "priority": "medium"
-    },
-    {
-      "from": "Mackenzie Beatty",
-      "subject": "[Mackbeatty/morning-brief] Run failed: Morning Brief - main (e22187d)",
-      "preview": "[Mackbeatty/morning-brief] Morning Brief workflow run Morning Brief: All jobs have failed View workflow run Status Job A",
-      "priority": "medium"
-    },
-    {
-      "from": "\"BestBuy.ca\"",
-      "subject": "Unbelievable 25th Anniversary savings on now!",
-      "preview": "A celebration that&#39;s a really big deal ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ",
-      "priority": "medium"
-    },
-    {
-      "from": "Team Pierre",
-      "subject": "My message to you",
-      "preview": "History will not judge us by the disruptions we faced, but by how we responded. By whether we surrendered to events or m",
-      "priority": "medium"
-    },
-    {
-      "from": "Power Kitchen",
-      "subject": "Low carb works. Here’s why.",
-      "preview": "More protein, simpler meals, and a routine that&#39;s easier to follow. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
-      "priority": "medium"
-    },
-    {
-      "from": "no-reply@myconnectedbuilding.com",
-      "subject": "Parcel Delivery Notification",
-      "preview": "New Parcel Delivery Information Unit 2001 Notification Type Deposit Compartment 806 Timestamp 2026-04-13 14:48 Passcode ",
+      "from": "Reddit",
+      "subject": "\"We are now an exclusive EV home 🔋⚡️\"",
+      "preview": "r/TeslaModelY: We are now an exclusive EV home 🔋⚡️ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌",
       "priority": "medium"
     },
     {
       "from": "GitHub",
-      "subject": "[GitHub] A personal access token (classic) has been added to your account",
-      "preview": "Hey Mackbeatty! A personal access token (classic) &quot;morning brief login&quot; with repo and workflow scopes was rece",
+      "subject": "[GitHub] Your personal access token (classic) is about to expire",
+      "preview": "Hi @Mackbeatty, We noticed your personal access token (classic) &quot;morning brief login&quot; with repo and workflow s",
+      "priority": "medium"
+    },
+    {
+      "from": "Best Western Rewards",
+      "subject": "Save 15% This Spring",
+      "preview": "Trade routine for ridge lines, and screen time for skyline views! Now is your chance to save more while enjoying more mi",
+      "priority": "medium"
+    },
+    {
+      "from": "LinkedIn Job Alerts",
+      "subject": "Mackenzie: your job alert for Business Analyst in Toronto, Ontario, Canada has been created",
+      "preview": "See your latest job matches ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "GitHub",
+      "subject": "[GitHub] A third-party OAuth application has been added to your account",
+      "preview": "Hey Mackbeatty! A third-party OAuth application (Supabase) with user:email scopes was recently authorized to access your",
+      "priority": "medium"
+    },
+    {
+      "from": "LinkedIn Job Alerts",
+      "subject": "Mackenzie: your job alert for Business Analyst in Waterloo, Ontario, Canada has been created",
+      "preview": "See your latest job matches ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "LinkedIn",
+      "subject": "Welcome to Premium! Let’s get started",
+      "preview": "LinkedIn Mackenzie Beatty Mackenzie, welcome to Premium Start strong with features to grow your small business. Only hav",
+      "priority": "medium"
+    },
+    {
+      "from": "LinkedIn",
+      "subject": "Mackenzie, please verify your new device",
+      "preview": "Mackenzie, please verify your new device ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
       "priority": "medium"
     }
   ],
@@ -68,5 +68,5 @@
     "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": "2026-04-13T18:44:25.556Z"
+  "generated_at": "2026-04-14T13:07:25.715Z"
 }
