@@ -3,63 +3,63 @@
   "events": [],
   "emails": [
     {
-      "from": "\"Rúngne\"",
-      "subject": "New Drop: Project Hoodie + Crewneck",
-      "preview": "Hoodies &amp; crews for Scandinavian summer. See the drop → ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "from": "no-reply@myconnectedbuilding.com",
+      "subject": "Parcel Delivery Notification",
+      "preview": "New Parcel Delivery Information Unit 2001 Notification Type Deposit Compartment 502 Timestamp 2026-04-15 12:42 Passcode ",
       "priority": "medium"
     },
     {
-      "from": "Supabase",
-      "subject": "Welcome to Supabase",
-      "preview": "Hey there, Welcome to Supabase, the Postgres development platform. Supabase gives you all the backend features you need ",
+      "from": "\"BestBuy.ca\"",
+      "subject": "Everyone’s loving our 25th Anniversary deals! 🛒",
+      "preview": "See what all the buzz is about for yourself! ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "\"Amazon.ca\"",
+      "subject": "Shipped: “GEARit Cat 6 Ethernet Cable...”",
+      "preview": "Shipped: “GEARit Cat 6 Ethernet Cable...”͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌",
+      "priority": "medium"
+    },
+    {
+      "from": "noreply@td.com",
+      "subject": "You have a new secure message in your EasyWeb Inbox",
+      "preview": "You have a new secure message in your EasyWeb ® Inbox Please login to EasyWeb ® and access your secure message to view y",
       "priority": "medium"
     },
     {
       "from": "Reddit",
-      "subject": "\"We are now an exclusive EV home 🔋⚡️\"",
-      "preview": "r/TeslaModelY: We are now an exclusive EV home 🔋⚡️ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌",
+      "subject": "\"ON TUESDAY?!?!??\"",
+      "preview": "r/OntarioGrade12s: ON TUESDAY?!?!?? ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ",
       "priority": "medium"
     },
     {
-      "from": "GitHub",
-      "subject": "[GitHub] Your personal access token (classic) is about to expire",
-      "preview": "Hi @Mackbeatty, We noticed your personal access token (classic) &quot;morning brief login&quot; with repo and workflow s",
+      "from": "Indeed",
+      "subject": "Electrical & Control Technician @ Ontario Power Generation",
+      "preview": "$42.82–$66.22 an hour. Hi Mackenzie, Your background as a General Contractor and your knowledge of multiple trades could",
       "priority": "medium"
     },
     {
-      "from": "Best Western Rewards",
-      "subject": "Save 15% This Spring",
-      "preview": "Trade routine for ridge lines, and screen time for skyline views! Now is your chance to save more while enjoying more mi",
-      "priority": "medium"
-    },
-    {
-      "from": "LinkedIn Job Alerts",
-      "subject": "Mackenzie: your job alert for Business Analyst in Toronto, Ontario, Canada has been created",
-      "preview": "See your latest job matches ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "from": "Michael Barrett",
+      "subject": "$90 billion conflict of interest?",
+      "preview": "He is personally advancing billions in a taxpayer-funded project tied to the very organization where his partner is a vi",
       "priority": "medium"
     },
     {
       "from": "GitHub",
       "subject": "[GitHub] A third-party OAuth application has been added to your account",
-      "preview": "Hey Mackbeatty! A third-party OAuth application (Supabase) with user:email scopes was recently authorized to access your",
+      "preview": "Hey Mackbeatty! A third-party OAuth application (Tailscale) with read:org and user:email scopes was recently authorized ",
       "priority": "medium"
     },
     {
-      "from": "LinkedIn Job Alerts",
-      "subject": "Mackenzie: your job alert for Business Analyst in Waterloo, Ontario, Canada has been created",
-      "preview": "See your latest job matches ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "from": "Rogers",
+      "subject": "We noticed a new MyRogers sign in",
+      "preview": "‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
       "priority": "medium"
     },
     {
-      "from": "LinkedIn",
-      "subject": "Welcome to Premium! Let’s get started",
-      "preview": "LinkedIn Mackenzie Beatty Mackenzie, welcome to Premium Start strong with features to grow your small business. Only hav",
-      "priority": "medium"
-    },
-    {
-      "from": "LinkedIn",
-      "subject": "Mackenzie, please verify your new device",
-      "preview": "Mackenzie, please verify your new device ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
+      "from": "do-not-reply@amazon.com",
+      "subject": "Included with your Amazon order: Free 90 days of music",
+      "preview": "Try Amazon Music Unlimited͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ",
       "priority": "medium"
     }
   ],
@@ -68,5 +68,5 @@
     "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": "2026-04-14T13:07:25.715Z"
+  "generated_at": "2026-04-15T13:05:42.357Z"
 }
