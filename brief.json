@@ -3,63 +3,63 @@
   "events": [],
   "emails": [
     {
-      "from": "no-reply@myconnectedbuilding.com",
-      "subject": "Parcel Delivery Notification",
-      "preview": "New Parcel Delivery Information Unit 2001 Notification Type Deposit Compartment 409 Timestamp 2026-04-16 11:58 Passcode ",
-      "priority": "medium"
-    },
-    {
-      "from": "\"Amazon.ca\"",
-      "subject": "Shipped: “Amazon Basics RJ45 Cat-6...”",
-      "preview": "Shipped: “Amazon Basics RJ45 Cat-6...”͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ",
+      "from": "\"BestBuy.ca\"",
+      "subject": "Our 25th Anniversary Sale is a really big deal 🛍️",
+      "preview": "Grab your favourite tech before the celebration ends. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌",
       "priority": "medium"
     },
     {
       "from": "Reddit",
-      "subject": "\"I’m cooked\"",
-      "preview": "r/OntarioGrade12s: I&#39;m cooked I&#39;m so done we&#39;re deadass the unluckiest gen 😭😭😭 I already got 20+ absences",
+      "subject": "\"Did not expect to get this today. Day ruined.\"",
+      "preview": "r/OntarioGrade12s: Did not expect to get this today. Day ruined. 94 average, I thought pretty decent ecs, no awards. Idk",
       "priority": "medium"
     },
     {
-      "from": "LinkedIn",
-      "subject": "Mackenzie, your puzzle is ready 🧩",
-      "preview": "LinkedIn puzzles are heating up. 3 connections finished. 🔥 ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "from": "TD",
+      "subject": "Important Changes to your TD Credit Card",
+      "preview": "Important Changes to your TD Credit Card Hi Mackenzie Gregory, We&#39;re reaching out to let you know that we&#39;re cha",
       "priority": "medium"
     },
     {
-      "from": "Live Nation Concerts",
-      "subject": "Your Upcoming Concert Lineup: Bert Kreischer, Maribou State, Aziz Ansari",
-      "preview": "Check Out Events in Your Area Happening Soon JUST ANNOUNCED Bert Kreischer Bert Kreischer Thu, Oct 1 BERT KREISCHER: PER",
+      "from": "FirstService Residential",
+      "subject": "URGENT - Illegal use of Locker #171",
+      "preview": "Please be informed that locker #171 is being illegally used by another resident. Owner has posted a notice and therefore",
       "priority": "medium"
     },
     {
-      "from": "Melissa Lantsman",
-      "subject": "Your vote matters.",
-      "preview": "As I am sure you have seen, the Carney Liberals were able to achieve a majority government this week. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
+      "from": "Best Western Rewards",
+      "subject": "Save 15% on Your Spring Reset (Ends April 19)",
+      "preview": "Make space for fresh air and wide horizons. Take 15% off and plan a trip that helps you recharge and rediscover. Best We",
       "priority": "medium"
     },
     {
-      "from": "\"Amazon.ca\"",
-      "subject": "Ordered: \"Amazon Basics RJ45 Cat-6...\"",
-      "preview": "Ordered: &quot;Amazon Basics RJ45 Cat-6...&quot;͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ",
+      "from": "\"BestBuy.ca\"",
+      "subject": "Quick reminder: your entry is waiting.",
+      "preview": "Confirm your email and enter the giveaway. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ",
       "priority": "medium"
     },
     {
-      "from": "no-reply@myconnectedbuilding.com",
-      "subject": "Parcel Pickup Notification",
-      "preview": "Parcel Pickup Notification Unit 2001 Notification Type Pickup Compartment Timestamp 2026-04-15 17:42 Passcode QR-Code",
-      "priority": "medium"
-    },
-    {
-      "from": "no-reply@myconnectedbuilding.com",
-      "subject": "Parcel Pickup Notification",
-      "preview": "Parcel Pickup Notification Unit 2001 Notification Type Pickup Compartment Timestamp 2026-04-15 17:42 Passcode QR-Code",
+      "from": "Coinbase",
+      "subject": "Update on SOL Purchase Limits",
+      "preview": "SOL purchases are no longer subject to limits. ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍",
       "priority": "medium"
     },
     {
       "from": "Power Kitchen",
-      "subject": "Low carb or clean bulking?",
-      "preview": "Eat less or eat more, it depends on your goal. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
+      "subject": "59% of women are confused about nutrition",
+      "preview": "It&#39;s not you. It&#39;s the constant change in nutrition advice. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "Katherine Gregory",
+      "subject": "Fwd: [Not Virus Scanned] 🚗 Confirmation of insurance - Your policy K6099592",
+      "preview": "The truck insurance .. keep this handy in case you are pulled over &gt; Begin forwarded message: &gt; &gt; From: Boris B",
+      "priority": "medium"
+    },
+    {
+      "from": "Katherine Gregory",
+      "subject": "Fwd: [Not Virus Scanned] 🚗 Confirmation of insurance - Your policy K6099592",
+      "preview": "Insurance forms.. I printed them off and they are at home. For your car and the truck . But if you get pulled over, you ",
       "priority": "medium"
     }
   ],
@@ -68,5 +68,5 @@
     "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": "2026-04-16T13:13:36.011Z"
+  "generated_at": "2026-04-17T13:00:29.620Z"
 }
