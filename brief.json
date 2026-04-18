@@ -4,62 +4,62 @@
   "emails": [
     {
       "from": "\"BestBuy.ca\"",
-      "subject": "Our 25th Anniversary Sale is a really big deal 🛍️",
-      "preview": "Grab your favourite tech before the celebration ends. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌",
+      "subject": "These 25th Anniversary deals are hot!",
+      "preview": "Enjoy sizzling savings for a limited time. 💸 ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏",
+      "priority": "medium"
+    },
+    {
+      "from": "Ant at Supabase",
+      "subject": "Supa Update April 2026",
+      "preview": "Everything that happened in the last month at Supabase ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
+      "priority": "medium"
+    },
+    {
+      "from": "Indeed",
+      "subject": "Red Seal Journeymen -Reinforcing Ironworker @ LMS Reinforcing Steel Group",
+      "preview": "From $37 an hour. Hi Mackenzie, LMS Reinforcing Steel Group is seeking a Red Seal Journeyman Reinforcing Ironworker. If ",
       "priority": "medium"
     },
     {
       "from": "Reddit",
-      "subject": "\"Did not expect to get this today. Day ruined.\"",
-      "preview": "r/OntarioGrade12s: Did not expect to get this today. Day ruined. 94 average, I thought pretty decent ecs, no awards. Idk",
+      "subject": "\"you’re kidding me, right?\"",
+      "preview": "r/OntarioGrade12s: you&#39;re kidding me, right? “from queens undergraduate admissions” the audacity ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏",
       "priority": "medium"
     },
     {
-      "from": "TD",
-      "subject": "Important Changes to your TD Credit Card",
-      "preview": "Important Changes to your TD Credit Card Hi Mackenzie Gregory, We&#39;re reaching out to let you know that we&#39;re cha",
+      "from": "Canadian Protein",
+      "subject": "Bundle Deals: Up to 25% Off",
+      "preview": "Everything you need—now bundled for less. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
       "priority": "medium"
     },
     {
-      "from": "FirstService Residential",
-      "subject": "URGENT - Illegal use of Locker #171",
-      "preview": "Please be informed that locker #171 is being illegally used by another resident. Owner has posted a notice and therefore",
+      "from": "Garmin",
+      "subject": "Enhance Your Workouts",
+      "preview": "Plus, New Peloton Compatibility ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
       "priority": "medium"
     },
     {
-      "from": "Best Western Rewards",
-      "subject": "Save 15% on Your Spring Reset (Ends April 19)",
-      "preview": "Make space for fresh air and wide horizons. Take 15% off and plan a trip that helps you recharge and rediscover. Best We",
+      "from": "Team Pierre",
+      "subject": "We won't stop fighting",
+      "preview": "Now that the Liberals have their majority, they&#39;re unveiling more of their true agenda. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
       "priority": "medium"
     },
     {
-      "from": "\"BestBuy.ca\"",
-      "subject": "Quick reminder: your entry is waiting.",
-      "preview": "Confirm your email and enter the giveaway. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ",
+      "from": "VIPorter",
+      "subject": "Your Quarterly VIPorter Statement is here",
+      "preview": "Mackenzie Beatty Your quarterly VIPorter report Here&#39;s a quick summary of your VIPorter points balance and the great",
       "priority": "medium"
     },
     {
-      "from": "Coinbase",
-      "subject": "Update on SOL Purchase Limits",
-      "preview": "SOL purchases are no longer subject to limits. ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍",
+      "from": "GitHub",
+      "subject": "[GitHub] A third-party OAuth application has been added to your account",
+      "preview": "Hey Mackbeatty! A third-party OAuth application (Notion) with repo scopes was recently authorized to access your account",
       "priority": "medium"
     },
     {
-      "from": "Power Kitchen",
-      "subject": "59% of women are confused about nutrition",
-      "preview": "It&#39;s not you. It&#39;s the constant change in nutrition advice. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
-      "priority": "medium"
-    },
-    {
-      "from": "Katherine Gregory",
-      "subject": "Fwd: [Not Virus Scanned] 🚗 Confirmation of insurance - Your policy K6099592",
-      "preview": "The truck insurance .. keep this handy in case you are pulled over &gt; Begin forwarded message: &gt; &gt; From: Boris B",
-      "priority": "medium"
-    },
-    {
-      "from": "Katherine Gregory",
-      "subject": "Fwd: [Not Virus Scanned] 🚗 Confirmation of insurance - Your policy K6099592",
-      "preview": "Insurance forms.. I printed them off and they are at home. For your car and the truck . But if you get pulled over, you ",
+      "from": "Blueprint",
+      "subject": "this longevity active supports calm focus",
+      "preview": "where to get it ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
       "priority": "medium"
     }
   ],
@@ -68,5 +68,5 @@
     "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": "2026-04-17T13:00:29.620Z"
+  "generated_at": "2026-04-18T12:42:42.370Z"
 }
