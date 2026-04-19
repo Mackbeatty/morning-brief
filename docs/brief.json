@@ -4,6 +4,42 @@
   "emails": [
     {
       "from": "\"BestBuy.ca\"",
+      "subject": "These offers have your name on them!",
+      "preview": "Exclusive offers for My Best Buy account holders. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "\"AutoTrader.ca\"",
+      "subject": "7 Boring Cars That Have Rare Spicy Versions",
+      "preview": "Like a V6 VW Beetle worth over $100000? AutoTrader.ca 7 Regular Cars with Wild Performance Versions These relatively bor",
+      "priority": "medium"
+    },
+    {
+      "from": "Reddit",
+      "subject": "\"CONGRATULATIONS\"",
+      "preview": "r/OntarioGrade12s: CONGRATULATIONS In a few days, midterm marks will begin to be submitted by teachers and sent off to u",
+      "priority": "medium"
+    },
+    {
+      "from": "Amazon",
+      "subject": "Your Amazon.ca Balance has been auto-reloaded",
+      "preview": "YourAmazon.ca account was automatically reloaded successfully. Your Gift Card Balance now reflects the additional funds ",
+      "priority": "medium"
+    },
+    {
+      "from": "Chelsea with IFTTT",
+      "subject": "7 automations to go green this Earth Day 🌍",
+      "preview": "Automate your good intentions this Earth Day. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
+      "priority": "medium"
+    },
+    {
+      "from": "TD Canada Trust",
+      "subject": "Interac e-Transfer: Kelly (landlord) has accepted your transfer of $1,900.00",
+      "preview": "MACKENZIE GREGORY BEATTY, your transfer of $1900.00 (CAD) has been deposited by Kelly (landlord) ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+      "priority": "medium"
+    },
+    {
+      "from": "\"BestBuy.ca\"",
       "subject": "These 25th Anniversary deals are hot!",
       "preview": "Enjoy sizzling savings for a limited time. 💸 ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏ ‌ ﻿͏",
       "priority": "medium"
@@ -25,42 +61,6 @@
       "subject": "\"you’re kidding me, right?\"",
       "preview": "r/OntarioGrade12s: you&#39;re kidding me, right? “from queens undergraduate admissions” the audacity ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏",
       "priority": "medium"
-    },
-    {
-      "from": "Canadian Protein",
-      "subject": "Bundle Deals: Up to 25% Off",
-      "preview": "Everything you need—now bundled for less. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
-      "priority": "medium"
-    },
-    {
-      "from": "Garmin",
-      "subject": "Enhance Your Workouts",
-      "preview": "Plus, New Peloton Compatibility ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
-      "priority": "medium"
-    },
-    {
-      "from": "Team Pierre",
-      "subject": "We won't stop fighting",
-      "preview": "Now that the Liberals have their majority, they&#39;re unveiling more of their true agenda. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ",
-      "priority": "medium"
-    },
-    {
-      "from": "VIPorter",
-      "subject": "Your Quarterly VIPorter Statement is here",
-      "preview": "Mackenzie Beatty Your quarterly VIPorter report Here&#39;s a quick summary of your VIPorter points balance and the great",
-      "priority": "medium"
-    },
-    {
-      "from": "GitHub",
-      "subject": "[GitHub] A third-party OAuth application has been added to your account",
-      "preview": "Hey Mackbeatty! A third-party OAuth application (Notion) with repo scopes was recently authorized to access your account",
-      "priority": "medium"
-    },
-    {
-      "from": "Blueprint",
-      "subject": "this longevity active supports calm focus",
-      "preview": "where to get it ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ",
-      "priority": "medium"
     }
   ],
   "metrics": {
@@ -68,5 +68,5 @@
     "unread_emails": 10,
     "high_priority_emails": 0
   },
-  "generated_at": "2026-04-18T12:42:42.370Z"
+  "generated_at": "2026-04-19T12:42:05.600Z"
 }
